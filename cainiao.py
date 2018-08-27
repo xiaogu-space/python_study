@@ -29,7 +29,7 @@ def get_address():
 
 
 def get_raw_input(address):
-    raw_input = {"address": address, "limit": "20"}
+    raw_input = {"address": address, "limit": "2"}
     return raw_input
 
 
@@ -37,7 +37,7 @@ def get_param(sign, content):
     param = {
         'msg_type': 'CNDZK_ADDRESS_QUERY',
         'data_digest': sign,
-        'logistic_provider_id': 'd011984......d7ae1df5d8d6dc149',
+        'logistic_provider_id': '1f04f09eb26f5d03b6a9a8303e553924',
         'logistics_interface': content
     }
     return param
@@ -56,12 +56,12 @@ address_list = get_address()
 for x in address_list:
     # unicode形态转中文，去掉空格（否则查不出）
     inputs = json.dumps(
-        get_raw_input(x)).encode('utf-8').decode('unicode_escape').replace(
+        get_raw_input("北京朝阳区西大望路甲12号国家广告产业园A座")).encode('utf-8').decode('unicode_escape').replace(
             ' ', '')
-
+    dataGet=get_param(get_data_digest(inputs, keys), inputs)
     result = requests.post(
         url,
-        data=get_param(get_data_digest(inputs, keys), inputs),
+        data=dataGet,
         headers=headers)
     result = result.content.decode(encoding='utf-8')
     # print(result)

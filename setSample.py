@@ -5,7 +5,7 @@ bri = set(countrys)
 print('china' in countrys)
 print('china' in bri)
 
-co=bri.copy()
+co = bri.copy()
 del countrys[1]
 countrys.remove('china')
 
