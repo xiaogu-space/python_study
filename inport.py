@@ -2,6 +2,10 @@
 import sys
 import insayHi
 
+sys.path.append('./inport/')
+import plus
+
+plus.pl(1, 1)
 for i in sys.argv:
     print(i)
 

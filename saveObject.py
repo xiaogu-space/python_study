@@ -12,5 +12,6 @@ f.close()
 
 import json
 # outfile = open('saveData.json', 'w')
+# outfile = open('saveData.json', 'w',encoding='utf-8')
 with open('saveData.json', 'w') as outfile:
     json.dump(listObj, outfile, ensure_ascii=False)#支持中文写入
