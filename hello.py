@@ -1,4 +1,4 @@
-# -*- coding: UTF-8 -*-
+#coding=utf-8
 # 要想支持中文必须加上第一行
 aa = 20
 name = '小明'

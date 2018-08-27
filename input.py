@@ -1,5 +1,5 @@
 # 输入示例
-#coding utf-8
+#coding=utf-8
 def reverse(text):
     t = text[::-1]  #顺序取反
     print('111:', t)

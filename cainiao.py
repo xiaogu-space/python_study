@@ -1,4 +1,4 @@
-# coding:utf-8
+#coding=utf-8
 # by NeilShi 11/29/2017
 import requests
 import hashlib

@@ -1,4 +1,4 @@
-#coding=UTF-8
+#coding=utf-8
 class Person:
     def sayHi(self):
         print("你好")

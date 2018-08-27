@@ -1,4 +1,4 @@
-# -*- coding: UTF-8 -*-
+#coding=utf-8
 shopList = ['苹果', '香蕉', '鸭梨']
 print('我有', len(shopList), '中水果要去买')
 
