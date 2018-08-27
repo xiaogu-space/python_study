@@ -11,7 +11,7 @@ import os
 # 资源：d0119848ab5......df5d8d6dc149
 
 url = 'http://link.cainiao.com/gateway/link.do'
-keys = '746gN2658u6p3PKH02389E3G18TK99v4'
+keys = '746gN2658u...G18TK99v4'
 
 headers = {'content-type': 'application/x-www-form-urlencoded; charset=UTF-8'}
 
@@ -37,7 +37,7 @@ def get_param(sign, content):
     param = {
         'msg_type': 'CNDZK_ADDRESS_QUERY',
         'data_digest': sign,
-        'logistic_provider_id': '1f04f09eb26f5d03b6a9a8303e553924',
+        'logistic_provider_id': '1f04f09eb...303e553924',
         'logistics_interface': content
     }
     return param
