@@ -9,7 +9,7 @@ try:
         if len(line) == 0:
             break
         print(line, end='')
-        sys.stdout.flush()  #???
+        sys.stdout.flush()  #为了兼容在所有的地方都是一秒钟输出一个
         print('Press ctrl+c now')
         time.sleep(2)
 except IOError:
